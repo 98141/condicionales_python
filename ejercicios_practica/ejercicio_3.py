@@ -23,7 +23,7 @@ puntaje = 70
 # la variable nota la nota del alumno según
 # las siguientes condiciones:
 
-nota = ""
+nota = int(input("Ingrese la nota: "))
 
 # Si el puntaje es mayor igual a 90 --> nota = "A"
 # Si el puntaje es mayor igual a 80 --> nota = "B"
@@ -36,3 +36,19 @@ nota = ""
 # Puede consultar el ejemplo de clase 2 como referencia
 
 # Imprimir en pantalla la variable nota
+
+if nota >= 90:
+    nota = "A"
+    print("La nota es A.",  nota)
+elif nota >= 80:
+    nota = "B"
+    print("La nota es B.", nota)
+elif nota >= 70:
+    nota = "C"
+    print("La nota es C.", nota)
+elif nota >= 60:
+    nota = "D"
+    print("La nota es D.", nota)
+else:
+    nota = "F"
+    print("La nota es F.", nota)

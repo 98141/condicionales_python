@@ -29,6 +29,11 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 res_1 = 0
 
 # Imprimir en pantalla la variable res_1
+if numero_1 > numero_2:
+    res_1 = 1
+else:
+    res_1 = 2
+print("el valor de res 1 es: ",res_1)
 
 # Verifique si el numero_1 positivo, negativo o cero
 # Utilice if, elif y else
@@ -38,6 +43,14 @@ res_1 = 0
 res_2 = 0
 
 # Imprimir en pantalla la variable res_2
+if numero_1 > 0:
+    res_2 = 1
+elif numero_1 < 0:
+    res_2 = 2
+else:
+    res_2 = 3
+print("el valor de res 2 es: ", res_2)
+
 
 
 # Verifique si el numero_1 es mayor a 0 y menor a 100
@@ -47,6 +60,12 @@ res_2 = 0
 res_3 = 0
 
 # Imprimir en pantalla la variable res_3
+if numero_1 > 0 and numero_1 < 100:
+    res_3 = 1
+else:
+    res_3 = 2
+
+print("el valor de res 3 es: ", res_3)
 
 
 # Verifique si:
@@ -57,3 +76,8 @@ res_3 = 0
 res_4 = 0
 
 # Imprimir en pantalla la variable res_4
+if numero_1 < 10 or numero_2 > -2:
+    res_4 = 1
+else:
+    res_4 = 2
+print("el valor de res 4 es: ", res_4)
